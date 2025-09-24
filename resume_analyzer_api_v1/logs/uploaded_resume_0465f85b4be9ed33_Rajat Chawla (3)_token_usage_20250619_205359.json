@@ -1,0 +1,40 @@
+{
+  "token_usage": {
+    "total_tokens": 10177,
+    "prompt_tokens": 8091,
+    "completion_tokens": 2086,
+    "by_extractor": {
+      "profile": {
+        "total_tokens": 4071,
+        "prompt_tokens": 2561,
+        "completion_tokens": 1510,
+        "source": "message_usage_metadata"
+      },
+      "skills": {
+        "total_tokens": 1714,
+        "prompt_tokens": 1592,
+        "completion_tokens": 122,
+        "source": "message_usage_metadata"
+      },
+      "education": {
+        "total_tokens": 1947,
+        "prompt_tokens": 1936,
+        "completion_tokens": 11,
+        "source": "message_usage_metadata"
+      },
+      "experience": {
+        "total_tokens": 2445,
+        "prompt_tokens": 2002,
+        "completion_tokens": 443,
+        "source": "message_usage_metadata"
+      },
+      "yoe": {
+        "total_tokens": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "source": "calculated"
+      }
+    },
+    "source": "plugins"
+  }
+}

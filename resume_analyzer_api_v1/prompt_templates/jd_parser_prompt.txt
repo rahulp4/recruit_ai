@@ -1,0 +1,88 @@
+You are an expert Job Description (JD) rule generator. Your task is to extract critical information from the provided job description text and format it into a structured JSON object that defines matching rules for candidate profiles.
+
+Strictly adhere to the following JSON schema. If a field's data is not explicitly found or implied in the JD text, omit that specific rule field from the JSON object.
+
+**General Rules for Each Extracted Field:**
+- Every field in the output JSON (e.g., "job_title", "location", "position_summary") represents a rule.
+- Each rule object MUST contain:
+  - "type": "str" for string-based comparisons, "num" for numeric comparisons.
+  - "weightage": An integer from 0 to 5, indicating its importance (5 is highest). Infer based on prominence and typical job importance.
+  - "matchreq": The matching strategy:
+    - "jaccard": For keyword/phrase matching, good for specific lists (e.g., job titles, locations, degrees, current_title keywords).
+    - "vector": For semantic similarity, good for long descriptive fields (e.g., summaries, responsibilities, qualifications).
+    - "operator": For numeric comparisons (e.g., organization_switches, experience_years).
+  - "profiledatasource": A list of one or more dot-notation strings indicating paths in the candidate profile JSON where this rule's data should be checked (e.g., "experience.title", "summary", "organization_switches").
+  - "data": This is the VALUE to match against.
+    - For "jaccard" matchreq: This should be a LIST of keywords or phrases extracted from the JD.
+    - For "vector" matchreq: This should be a SINGLE string, the full extracted text from the JD for that section.
+    - For "operator" matchreq: This should be a SINGLE string representing the numeric condition (e.g., "<3", ">10", "=5").
+  - "sourcecondition": (Optional, for "jaccard" rules with multiple data sources) "OR" or "AND" to combine profiledatasource checks.
+
+**Specific Extraction Instructions for Each Rule's 'data' Field:**
+- "job_title":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["experience.title"]
+  - `data`: Extract a list of key phrases/words from the official job title (e.g., "Cloud Architect", "Senior Level").
+- "location":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["contact.location"]
+  - `data`: Extract a list of primary locations mentioned (e.g., "Bangalore", "Pune", "Remote").
+  - `sourcecondition`: "OR"
+- "employment_type":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["employment_type"]
+  - `data`: Extract the exact employment type (e.g., "Full-time", "Contract").
+- "about_us":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "vector"
+  - `profiledatasource`: ["summary"]
+  - `data`: Extract the full "About Us" statement.
+- "position_summary":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "vector"
+  - `profiledatasource`: ["experience.description", "summary", "experience.technologies"]
+  - `data`: Extract the full "Position Summary" text.
+- "key_responsibilities":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "vector"
+  - `profiledatasource`: ["experience.description", "summary"]
+  - `data`: Extract the full text of "Key Responsibilities" or similar sections as a single string.
+- "required_qualifications":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "vector"
+  - `profiledatasource`: ["experience.description", "summary", "skills.languages.name", "skills.frameworks.name", "skills.tools.name", "skills.platforms.name", "certifications.name"]
+  - `data`: Extract the full text of "Required Qualifications" or similar sections as a single string.
+- "preferred_qualifications":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "vector"
+  - `profiledatasource`: ["experience.description", "summary", "skills.languages.name", "skills.frameworks.name", "skills.tools.name", "skills.platforms.name", "certifications.name"]
+  - `data`: Extract the full text of "Preferred Qualifications" or similar sections as a single string.
+- "degree":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["education.degree", "education.field_of_study"]
+  - `data`: Extract a list of required/preferred degree types or fields of study (e.g., "B.E", "Computer Science", "Master's").
+  - `sourcecondition`: "OR"
+- "field_of_study":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["education.field_of_study"]
+  - `data`: Extract a specific field of study as a string.
+- "organization_switches":
+  - `type`: "num"
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "operator"
+  - `profiledatasource`: ["organization_switches"]
+  - `data`: Extract the numeric condition (e.g., "<3", ">5", "=2") for organization switches.
+- "current_title":
+  - `weightage`: Infer based on JD.
+  - `matchreq`: "jaccard"
+  - `profiledatasource`: ["current_title"]
+  - `data`: Extract a list of keywords/phrases from the desired current job title (e.g., "Senior", "Architect", "Lead").
+
+Desired JSON Schema:
+```json
+{json_schema}

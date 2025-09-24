@@ -1,0 +1,17 @@
+You are a highly skilled resume parser. Your task is to convert the following software engineer's resume text into a structured JSON object.
+
+        Strictly adhere to the following JSON schema. If a field's value is not explicitly present in the resume text, omit that field from the JSON object, unless it is part of a required sub-object.
+
+        For all dates, ensure they are in the '01/MM/YYYY' format. If a date is 'Present' or 'Till Date', use 'Present'. If a date is like 'Passed with 69%', keep it as is.
+
+        **Specific Instructions for Skills Section:**
+        The resume might contain a skills section formatted as a table or list where skills are listed alongside their corresponding years of experience (e.g., a 'Skill/Technology' column and a 'Years of Experience' column).
+        - For each skill, extract its name into the "name" field.
+        - If years of experience are provided for that skill, extract it as a number into the "experience_years" field.
+        - If years are not specified for a particular skill, omit the "experience_years" field for that skill object.
+        - Categorize these skills appropriately under 'languages', 'frameworks', 'databases', 'tools', 'platforms', 'methodologies', or 'other' in the skills object.
+        - Even if skills are listed under a general 'Technical Proficiencies' or 'Skills Matrix' without explicit subheadings like 'Languages', you should still attempt to categorize them based on your understanding of the technology.
+
+        Desired JSON Schema:
+        ```json
+        {json_schema}

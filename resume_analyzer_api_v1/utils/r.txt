@@ -1,0 +1,18 @@
+
+##################################################
+FULL PARAGRAPH TEXT (EXCLUDING TABLES - Raw Output):
+##################################################
+
+Rahul Poddar
+B.E (Electronics Engineering) 					         Pune
+E-MAIL: rahulgpoddar@yahoo.com			Tel. 9890678703
+Experience Summary
+More than 21 Years of experience in the IT industry with varied roles such as Senior Director (Product Dev), Product Architect and developer. Instrumental in digital transformation of the current product starting with redesigning the product using micro services based framework to offer on premises and cloud version of the product to the use of cloud services such a Twilio/DialogFlow for building chatbot/voicebot.
+Looking for leadership role/opportunity where I can leverage my knowledge of emerging technologies and manage end to end product / services development cycle.
+Excellent knowledge of cloud practices including hands on experience on AWS services. Have been part of digital transformation for the current product and journey to break the big monolithic application to micro service based application using the emerging technologies enabling digital transformation and micro services based frameworks.
+Experience on cloud practices including hands on experience on AWS services. Have deployed and engineered application on AWS services. Experience on AWS services such as IAM, Cognito, Lambda, SNS, Virtual Private Cloud(VPC), Elastic Beanstalk, Load balancer, Route 53 , CloudFront, API Gateway, RDS using MySQL.
+Engineered reference end to end application with Spring, Spring Boot MicroService, cloud deployment, NoSQL MongoDB, Hibernate 4.2. Expertize in bootstrap4, Angular 7 and JQuery framework for usage with HTML5.
+Completed certification in Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning.
+Maintain my own reference code repository at github. https://github.com/rahulp4
+Have successfully managed execution of product development from requirement phase till product release. Role involves interactions with multiple stakeholders and planning product development as per allotted budget. Handled multiple r
+...

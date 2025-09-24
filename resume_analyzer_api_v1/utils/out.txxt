@@ -1,0 +1,117 @@
+
+##################################################
+FULL PARAGRAPH TEXT (EXCLUDING TABLES - Raw Output):
+##################################################
+
+Priya Sharma
+Email: priya.sharma@example.com
+Location: Bengaluru, India
+LinkedIn: linkedin.com/in/priyasharma
+GitHub: github.com/priyasharma
+Career Overview
+Senior Software Engineer with 8 years of experience specializing in backend development and cloud-native architectures. Expertise in designing scalable systems using Java, Spring Boot, and deploying on AWS. Proven ability to lead teams and mentor junior developers.
+Experience
+Academic Background
+M.Sc. in Computer Science
+Indian Institute of Technology, Hyderabad
+2013 – 2015
+Technical Expertise
+Languages: Java, Kotlin, Python
+Frameworks: Spring Boot, Hibernate
+Cloud: AWS (EC2, S3, Lambda, RDS)
+Tools: Jenkins, Docker, Kubernetes, Git
+Databases: PostgreSQL, MySQL
+Certifications
+- AWS Certified Solutions Architect – Associate
+- Oracle Certified Java Programmer
+
+==================================================
+ALL GENERATED SECTIONS FROM TABLES (Raw Output):
+==================================================
+
+
+---
+## Period: N/A Date Range
+
+**Position & Company:** Lead Backend Engineer
+CloudNet Inc., Bengaluru
+Mar 2020 – Present
+**Key Responsibilities & Achievements:** - Designed microservice architecture for scalable platforms.
+- Migrated legacy systems to Spring Boot microservices on AWS.
+- Implemented CI/CD pipeline using Jenkins & Docker.
+- Led a backend team of 5 engineers.
+
+
+
+---
+## Period: N/A Date Range
+
+**Position & Company:** Software Engineer
+DataSolutions Ltd., Hyderabad
+Aug 2015 – Feb 2020
+**Key Responsibilities & Achievements:** - Developed REST APIs for internal and external clients.
+- Used Hibernate ORM for complex data mappings.
+- Integrated with third-party APIs and authentication providers.
+- Improved database query performance by 40%.
+
+
+
+
+************************************************************
+COMBINED DOCUMENT CONTENT (PARAGRAPHS THEN TABLES):
+************************************************************
+
+##################################################
+FULL DOCUMENT PARAGRAPH TEXT
+##################################################
+Priya Sharma
+Email: priya.sharma@example.com
+Location: Bengaluru, India
+LinkedIn: linkedin.com/in/priyasharma
+GitHub: github.com/priyasharma
+Career Overview
+Senior Software Engineer with 8 years of experience specializing in backend development and cloud-native architectures. Expertise in designing scalable systems using Java, Spring Boot, and deploying on AWS. Proven ability to lead teams and mentor junior developers.
+Experience
+Academic Background
+M.Sc. in Computer Science
+Indian Institute of Technology, Hyderabad
+2013 – 2015
+Technical Expertise
+Languages: Java, Kotlin, Python
+Frameworks: Spring Boot, Hibernate
+Cloud: AWS (EC2, S3, Lambda, RDS)
+Tools: Jenkins, Docker, Kubernetes, Git
+Databases: PostgreSQL, MySQL
+Certifications
+- AWS Certified Solutions Architect – Associate
+- Oracle Certified Java Programmer
+
+==================================================
+EXTRACTED TABLE DATA (FORMATTED SECTIONS)
+==================================================
+
+---
+## Period: N/A Date Range
+
+**Position & Company:** Lead Backend Engineer
+CloudNet Inc., Bengaluru
+Mar 2020 – Present
+**Key Responsibilities & Achievements:** - Designed microservice architecture for scalable platforms.
+- Migrated legacy systems to Spring Boot microservices on AWS.
+- Implemented CI/CD pipeline using Jenkins & Docker.
+- Led a backend team of 5 engineers.
+
+
+
+---
+## Period: N/A Date Range
+
+**Position & Company:** Software Engineer
+DataSolutions Ltd., Hyderabad
+Aug 2015 – Feb 2020
+**Key Responsibilities & Achievements:** - Developed REST APIs for internal and external clients.
+- Used Hibernate ORM for complex data mappings.
+- Integrated with third-party APIs and authentication providers.
+- Improved database query performance by 40%.
+
+

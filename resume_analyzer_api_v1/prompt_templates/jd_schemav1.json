@@ -1,0 +1,13 @@
+{
+  "job_title": "string",
+  "location": "string",
+  "employment_type": "string",
+  "about_us": "string",
+  "position_summary": "string",
+  "key_responsibilities": ["string"],
+  "required_qualifications": ["string"],
+  "preferred_qualifications": ["string"],
+  "what_we_offer": ["string"],
+  "to_apply": "string",
+  "equal_opportunity_employer_statement": "string (omit if not present)"
+}

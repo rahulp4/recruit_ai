@@ -1,0 +1,11 @@
+[
+  {
+    "label": "Run React (npm start)",
+    "adapter": "Node",
+    "request": "launch",
+    "program": "${workspaceFolder}/node_modules/react-scripts/scripts/start.js",
+    "cwd": "${workspaceFolder}",
+    "runtimeExecutable": "node",
+    "console": "integratedTerminal"
+  }
+]

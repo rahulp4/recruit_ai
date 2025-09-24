@@ -1,0 +1,77 @@
+{
+  "name": "Rahul Sharma",
+  "contact": {
+    "email": "rahul.sharma@example.com",
+    "phone": "+91 98765 43210",
+    "linkedin": "himalayas.app/@rahulsharma",
+    "location": "Bengaluru, Karnataka"
+  },
+  "summary": "Dynamic Java Development Manager with over 10 years of experience in software development and team leadership. Proven track record in managing large-scale projects, optimizing development processes, and fostering teamwork to deliver high-performance applications on time and within budget.",
+  "total_experience_years": 10,
+  "experience": [
+    {
+      "title": "Java Development Manager",
+      "company": "Tech Innovations Pvt. Ltd.",
+      "location": "Bengaluru, Karnataka",
+      "from": "01/05/2020",
+      "to": "Present",
+      "description": "Led a team of 15 developers in the successful delivery of 10+ enterprise-level applications.\nImplemented Agile methodologies, reducing project delivery time by 30%.\nStreamlined code review processes, increasing code quality and reducing bugs by 25%.",
+      "technologies": []
+    },
+    {
+      "title": "Senior Java Developer",
+      "company": "Innovatech Solutions",
+      "location": "Hyderabad, Telangana",
+      "from": "01/01/2015",
+      "to": "01/04/2020",
+      "description": "Designed and developed scalable microservices using Java Spring Boot, resulting in a 40% increase in application performance.\nCollaborated with cross-functional teams to define project specifications and deliver solutions aligned with client requirements.\nMentored junior developers, fostering a culture of continuous learning and improvement.",
+      "technologies": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Tech in Computer Science",
+      "institution": "Indian Institute of Technology (IIT) Madras",
+      "dates": "2012 - 2014",
+      "description": "Specialized in software engineering and distributed systems with a focus on Java technologies."
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Java"
+    ],
+    "frameworks": [
+      "Spring Boot"
+    ],
+    "methodologies": [
+      "Agile Methodologies"
+    ],
+    "other": [
+      "Microservices",
+      "Team Leadership",
+      "Project Management"
+    ]
+  },
+  "organization_switches": 1,
+  "technology_experience_years": {
+    "java": 10.3,
+    "spring boot": 10.3,
+    "agile methodologies": 10.3,
+    "microservices": 10.3,
+    "team leadership": 10.3,
+    "project management": 10.3
+  },
+  "time_spent_in_org": [
+    {
+      "company_name": "Innovatech Solutions",
+      "total_duration_years": 5.25,
+      "total_duration_months": 62.98
+    },
+    {
+      "company_name": "Tech Innovations Pvt. Ltd.",
+      "total_duration_years": 5.05,
+      "total_duration_months": 60.65
+    }
+  ],
+  "db_id": 7
+}

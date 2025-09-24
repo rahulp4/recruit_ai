@@ -1,0 +1,87 @@
+{
+  "job_title": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "profiledatasource": ["string"],
+    "data": ["string"]
+  },
+  "location": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "sourcecondition": "string (OR or AND)",
+    "profiledatasource": ["string"],
+    "data": ["string"]
+  },
+  "employment_type": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "data": "string"
+  },
+  "about_us": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "position_summary": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "key_responsibilities": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "required_qualifications": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "preferred_qualifications": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "degree": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "sourcecondition": "string (OR or AND)",
+    "profiledatasource": ["string"],
+    "data": ["string"]
+  },
+  "field_of_study": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "profiledatasource": ["string"],
+    "data": "string"
+  },
+  "organization_switches": {
+    "type": "num",
+    "weightage": "number (0-5)",
+    "matchreq": "string (operator)",
+    "profiledatasource": ["string"],
+    "data": "string (e.g., '<3', '>5', '=2')"
+  },
+  "current_title": {
+    "type": "str",
+    "weightage": "number (0-5)",
+    "matchreq": "string (jaccard or vector)",
+    "profiledatasource": ["string"],
+    "data": ["string"]
+  }
+}

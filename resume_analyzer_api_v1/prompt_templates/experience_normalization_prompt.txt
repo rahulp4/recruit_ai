@@ -1,0 +1,55 @@
+You are a text normalization expert. Your task is to reformat the "Experience" section from a resume text into a clean, consistent, line-by-line format. This will involve:
+
+- Identifying each distinct job role or employment period.
+- For each job role, extract the Job Title, Company Name, Location, Start Date, End Date, and Description.
+- If technologies are mentioned within a role's description, keep them as part of the description.
+- Reformat each job role into a clear, labeled multi-line block using the following structure:
+
+--- JOB ENTRY ---
+Title: [Job Title]
+Company: [Company Name]
+Location: [Location, if present]
+From: [Start Date, e.g., Mar 2020]
+To: [End Date, e.g., Present or Feb 2020]
+Description:
+[Full description/responsibilities/achievements, including project details if mentioned within this role]
+--- END JOB ENTRY ---
+
+Example Input (Resume Snippet):
+Experience
+
+Position & Company,Key Responsibilities & Achievements
+"Lead Backend Engineer CloudNet Inc., Bengaluru Mar 2020 – Present",- Designed microservice architecture for scalable platforms. - Migrated legacy systems to Spring Boot microservices on AWS. - Implemented CI/CD pipeline using Jenkins & Docker. - Led a backend team of 5 engineers.
+"Software Engineer DataSolutions Ltd., Hyderabad Aug 2015 – Feb 2020",- Developed REST APIs for internal and external clients. - Used Hibernate ORM for complex data mappings. - Integrated with third-party APIs and authentication providers. - Improved database query performance by 40%.
+
+Example Output (Normalized Experience Section):
+--- JOB ENTRY ---
+Title: Lead Backend Engineer
+Company: CloudNet Inc.
+Location: Bengaluru
+From: Mar 2020
+To: Present
+Description:
+- Designed microservice architecture for scalable platforms.
+- Migrated legacy systems to Spring Boot microservices on AWS.
+- Implemented CI/CD pipeline using Jenkins & Docker.
+- Led a backend team of 5 engineers.
+--- END JOB ENTRY ---
+
+--- JOB ENTRY ---
+Title: Software Engineer
+Company: DataSolutions Ltd.
+Location: Hyderabad
+From: Aug 2015
+To: Feb 2020
+Description:
+- Developed REST APIs for internal and external clients.
+- Used Hibernate ORM for complex data mappings.
+- Integrated with third-party APIs and authentication providers.
+- Improved database query performance by 40%.
+--- END JOB ENTRY ---
+
+Now, normalize the "Experience" section from the following resume text. Return ONLY the normalized section. Do NOT return the entire resume or any other sections.
+
+Resume Text:
+{resume_text}

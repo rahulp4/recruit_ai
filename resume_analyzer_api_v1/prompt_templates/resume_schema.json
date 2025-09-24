@@ -1,0 +1,59 @@
+{
+          "name": "string",
+          "contact": {
+            "email": "string",
+            "phone": "string",
+            "linkedin": "string (URL, omit if not present)",
+            "github": "string (URL, omit if not present)",
+            "website": "string (URL, omit if not present)",
+            "location": "string (omit if not present)"
+          },
+          "summary": "string",
+          "total_experience_years": "number (extract if explicitly mentioned like 'X years of experience', otherwise omit)",
+          "experience": [
+            {
+              "title": "string",
+              "company": "string",
+              "location": "string (omit if not present)",
+              "from": "string (01/MM/YYYY)",
+              "to": "string (01/MM/YYYY or Present)",
+              "description": "string (omit if not present)",
+              "technologies": ["string"]
+            }
+          ],
+          "education": [
+            {
+              "degree": "string",
+              "field_of_study": "string (omit if not present)",
+              "institution": "string",
+              "location": "string (omit if not present)",
+              "dates": "string (01/MM/YYYY, Present, or descriptive like 'Passed with 69%')"
+            }
+          ],
+          "skills": {
+            "languages": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "frameworks": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "databases": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "tools": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "platforms": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "methodologies": [ { "name": "string", "experience_years": "number (omit if not specified)" } ],
+            "other": [ { "name": "string", "experience_years": "number (omit if not specified)" } ]
+          },
+          "projects": [
+            {
+              "name": "string",
+              "from": "string (01/MM/YYYY)",
+              "to": "string (01/MM/YYYY or Present)",
+              "description": "string (omit if not present)",
+              "technologies": ["string"],
+              "url": "string (URL, omit if not present)"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "string",
+              "issuing_organization": "string (URL, omit if not present)",
+              "date": "string (01/MM/YYYY or descriptive like 'Completed')"
+            }
+          ]
+        }
